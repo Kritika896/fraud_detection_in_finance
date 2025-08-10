@@ -1,7 +1,4 @@
-import sys
-import sklearn
-print("Python executable:", sys.executable)
-print("scikit-learn version:", sklearn.__version__)
+
 
 import streamlit as st
 import pandas as pd
@@ -36,3 +33,4 @@ if st.button("Predict"):
         st.error("This transaction is fraud")
     else:
         st.success("This transaction looks like it is not a fraud")
+
